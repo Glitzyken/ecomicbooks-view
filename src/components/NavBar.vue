@@ -7,17 +7,17 @@
     height="58"
     app
   >
-    <v-btn class="pa-7">
+    <v-btn>
       <span>Home</span>
       <v-icon large>mdi-home</v-icon>
     </v-btn>
 
-    <v-btn class="pa-7">
+    <v-btn>
       <span>Search</span>
       <v-icon large>mdi-magnify</v-icon>
     </v-btn>
 
-    <v-btn class="pa-7">
+    <v-btn>
       <span>Series</span>
       <v-icon large>mdi-book-alphabet</v-icon>
     </v-btn>
