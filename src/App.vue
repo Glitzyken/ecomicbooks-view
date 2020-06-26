@@ -26,6 +26,6 @@ export default {
 
 .sample {
   background: $bg;
-  height: 400px;
+  height: 1000px;
 }
 </style>
