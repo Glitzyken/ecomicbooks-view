@@ -3,7 +3,7 @@
     :value="activeBtn"
     grow
     color="#d93f51"
-    background-color="#291b29"
+    background-color="#1c101c"
     height="58"
     app
   >
