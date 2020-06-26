@@ -4,20 +4,20 @@
     grow
     color="#d93f51"
     background-color="#1c101c"
-    height="58"
+    height="60"
     app
   >
-    <v-btn>
+    <v-btn class="mt-2">
       <span>Home</span>
       <v-icon large>mdi-home</v-icon>
     </v-btn>
 
-    <v-btn>
+    <v-btn class="mt-2">
       <span>Search</span>
       <v-icon large>mdi-magnify</v-icon>
     </v-btn>
 
-    <v-btn>
+    <v-btn class="mt-2">
       <span>Series</span>
       <v-icon large>mdi-book-alphabet</v-icon>
     </v-btn>
