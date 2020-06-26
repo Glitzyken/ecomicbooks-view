@@ -84,7 +84,26 @@
 -->
 
 <template>
-  <div class="home"></div>
+  <v-container class="pa-5 mx-auto">
+    <v-row>
+      <v-col cols="6">
+        <v-card max-width="150" max-height="300" background-color="#1c101c">
+          <v-img src="../assets/img/sample-1.jpg" />
+          <v-card-text class="text-center font-weight-black"
+            >Black Panther</v-card-text
+          >
+        </v-card>
+      </v-col>
+      <v-col cols="6">
+        <v-card max-width="150" max-height="300" background-color="#1c101c">
+          <v-img src="../assets/img/sample-2.jpg" />
+          <v-card-text class="text-center font-weight-black"
+            >Rescue</v-card-text
+          >
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>

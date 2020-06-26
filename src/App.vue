@@ -1,18 +1,22 @@
 <template>
   <v-app>
-    <div class="sample"></div>
+    <div class="sample">
+      <Home />
+    </div>
     <NavBar />
   </v-app>
 </template>
 
 <script>
 import NavBar from './components/NavBar';
+import Home from './views/Home';
 
 export default {
   name: 'App',
 
   components: {
-    NavBar
+    NavBar,
+    Home
   },
 
   data: () => ({
@@ -26,6 +30,6 @@ export default {
 
 .sample {
   background: $bg;
-  height: 1000px;
+  // height: 1000px;
 }
 </style>
