@@ -2,6 +2,8 @@
   <v-container class="pa-5 mx-auto">
     <h1><span class="custom-span"> New </span> Issues</h1>
 
+    <!-- Dummy dynamic contents (to be replaced with real data from the backend) -->
+
     <v-row>
       <v-col cols="6" v-for="issue in issues" :key="issue.imgUrl">
         <div class="card">

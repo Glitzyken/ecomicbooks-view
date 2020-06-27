@@ -42,5 +42,6 @@ export default {
 h1 {
   color: $white;
   font-size: 20px;
+  margin-bottom: 5px;
 }
 </style>
