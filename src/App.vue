@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <Header />
     <div class="sample">
       <Home />
     </div>
@@ -8,15 +9,17 @@
 </template>
 
 <script>
-import NavBar from './components/NavBar';
 import Home from './views/Home';
+import NavBar from './components/NavBar';
+import Header from './components/Header';
 
 export default {
   name: 'App',
 
   components: {
+    Home,
     NavBar,
-    Home
+    Header
   },
 
   data: () => ({
