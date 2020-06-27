@@ -1,12 +1,13 @@
 <template>
   <v-container class="pa-5 mx-auto">
+    <h1><span class="custom-span"> New </span> Issues</h1>
+
     <v-row>
       <v-col cols="6">
         <div class="card">
           <v-img
             class="rounded"
             contain
-            eager
             max-width="150px"
             src="../assets/img/sample-1.jpg"
             lazy-src="../assets/img/lazy-loader.jpg"

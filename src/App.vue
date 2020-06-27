@@ -33,6 +33,14 @@ export default {
 
 .sample {
   background: $bg;
-  // height: 1000px;
+}
+
+.custom-span {
+  font-weight: 100;
+}
+
+h1 {
+  color: $white;
+  font-size: 20px;
 }
 </style>
