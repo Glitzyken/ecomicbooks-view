@@ -88,100 +88,16 @@
     <v-row>
       <v-col cols="6">
         <div class="card">
-          <img
-            class="card__img"
+          <v-img
+            class="rounded"
+            contain
+            eager
+            max-width="150px"
             src="../assets/img/sample-1.jpg"
+            lazy-src="../assets/img/lazy-loader.jpg"
             alt="issue image"
           />
           <div class="card__text">Black Panther 2020 Issue #1</div>
-        </div>
-      </v-col>
-
-      <v-col cols="6">
-        <div class="card">
-          <img
-            class="card__img"
-            src="../assets/img/sample-2.jpg"
-            alt="issue image"
-          />
-          <div class="card__text">Rescue 2020 New Issue #1</div>
-        </div>
-      </v-col>
-
-      <v-col cols="6">
-        <div class="card">
-          <img
-            class="card__img"
-            src="../assets/img/sample-3.jpg"
-            alt="issue image"
-          />
-          <div class="card__text">Die Issue #1</div>
-        </div>
-      </v-col>
-
-      <v-col cols="6">
-        <div class="card">
-          <img
-            class="card__img"
-            src="../assets/img/sample-4.jpg"
-            alt="issue image"
-          />
-          <div class="card__text">Thor Issue #1</div>
-        </div>
-      </v-col>
-
-      <v-col cols="6">
-        <div class="card">
-          <img
-            class="card__img"
-            src="../assets/img/sample-5.jpg"
-            alt="issue image"
-          />
-          <div class="card__text">Gung-Ho Black Sheep Issue #1</div>
-        </div>
-      </v-col>
-
-      <v-col cols="6">
-        <div class="card">
-          <img
-            class="card__img"
-            src="../assets/img/sample-6.jpg"
-            alt="issue image"
-          />
-          <div class="card__text">Firefly Issue #1</div>
-        </div>
-      </v-col>
-
-      <v-col cols="6">
-        <div class="card">
-          <img
-            class="card__img"
-            src="../assets/img/sample-7.jpg"
-            alt="issue image"
-          />
-          <div class="card__text">Tartarus Issue #1</div>
-        </div>
-      </v-col>
-
-      <v-col cols="6">
-        <div class="card">
-          <img
-            class="card__img"
-            src="../assets/img/sample-8.jpg"
-            alt="issue image"
-          />
-          <div class="card__text">Transformers Issue #1</div>
-        </div>
-      </v-col>
-
-      <v-col cols="6">
-        <div class="card">
-          <img
-            class="card__img"
-            src="../assets/img/sample-9.jpg"
-            alt="issue image"
-          />
-          <div class="card__text">The Low, Low Woods Issue #1</div>
         </div>
       </v-col>
     </v-row>
