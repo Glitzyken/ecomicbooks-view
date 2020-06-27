@@ -87,30 +87,135 @@
   <v-container class="pa-5 mx-auto">
     <v-row>
       <v-col cols="6">
-        <v-card max-width="150" max-height="300" background-color="#1c101c">
-          <v-img src="../assets/img/sample-1.jpg" />
-          <v-card-text class="text-center font-weight-black"
-            >Black Panther</v-card-text
-          >
-        </v-card>
+        <div class="card">
+          <img
+            class="card__img"
+            src="../assets/img/sample-1.jpg"
+            alt="issue image"
+          />
+          <div class="card__text">Black Panther 2020 Issue #1</div>
+        </div>
       </v-col>
+
       <v-col cols="6">
-        <v-card max-width="150" max-height="300" background-color="#1c101c">
-          <v-img src="../assets/img/sample-2.jpg" />
-          <v-card-text class="text-center font-weight-black"
-            >Rescue</v-card-text
-          >
-        </v-card>
+        <div class="card">
+          <img
+            class="card__img"
+            src="../assets/img/sample-2.jpg"
+            alt="issue image"
+          />
+          <div class="card__text">Rescue 2020 New Issue #1</div>
+        </div>
+      </v-col>
+
+      <v-col cols="6">
+        <div class="card">
+          <img
+            class="card__img"
+            src="../assets/img/sample-3.jpg"
+            alt="issue image"
+          />
+          <div class="card__text">Die Issue #1</div>
+        </div>
+      </v-col>
+
+      <v-col cols="6">
+        <div class="card">
+          <img
+            class="card__img"
+            src="../assets/img/sample-4.jpg"
+            alt="issue image"
+          />
+          <div class="card__text">Thor Issue #1</div>
+        </div>
+      </v-col>
+
+      <v-col cols="6">
+        <div class="card">
+          <img
+            class="card__img"
+            src="../assets/img/sample-5.jpg"
+            alt="issue image"
+          />
+          <div class="card__text">Gung-Ho Black Sheep Issue #1</div>
+        </div>
+      </v-col>
+
+      <v-col cols="6">
+        <div class="card">
+          <img
+            class="card__img"
+            src="../assets/img/sample-6.jpg"
+            alt="issue image"
+          />
+          <div class="card__text">Firefly Issue #1</div>
+        </div>
+      </v-col>
+
+      <v-col cols="6">
+        <div class="card">
+          <img
+            class="card__img"
+            src="../assets/img/sample-7.jpg"
+            alt="issue image"
+          />
+          <div class="card__text">Tartarus Issue #1</div>
+        </div>
+      </v-col>
+
+      <v-col cols="6">
+        <div class="card">
+          <img
+            class="card__img"
+            src="../assets/img/sample-8.jpg"
+            alt="issue image"
+          />
+          <div class="card__text">Transformers Issue #1</div>
+        </div>
+      </v-col>
+
+      <v-col cols="6">
+        <div class="card">
+          <img
+            class="card__img"
+            src="../assets/img/sample-9.jpg"
+            alt="issue image"
+          />
+          <div class="card__text">The Low, Low Woods Issue #1</div>
+        </div>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
   name: 'Home',
   components: {}
 };
 </script>
+
+<style lang="scss">
+@import '../assets/sass/_variables.scss';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  &__text {
+    font-weight: 500;
+    line-height: 18px;
+    color: $white;
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+</style>
