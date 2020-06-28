@@ -15,9 +15,9 @@
     </v-btn>
 
     <v-btn class="mt-2">
-      <router-link active-class="nav-selected" to="/search">
+      <router-link active-class="nav-selected" to="/explore">
         <v-icon large>mdi-magnify</v-icon>
-        <span class="span">Search</span>
+        <span class="span">Explore</span>
       </router-link>
     </v-btn>
 
@@ -41,7 +41,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../assets/sass/_variables.scss';
+@import '../assets/sass/_variables';
 
 .nav-selected {
   color: $primary !important;

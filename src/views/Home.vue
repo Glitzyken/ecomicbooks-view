@@ -82,7 +82,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../assets/sass/_variables.scss';
+@import '../assets/sass/variables';
 
 .card {
   display: flex;
