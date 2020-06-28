@@ -41,7 +41,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../assets/sass/_variables.scss";
+@import '../assets/sass/_variables.scss';
 
 .nav-selected {
   color: $primary !important;
