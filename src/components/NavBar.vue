@@ -1,5 +1,12 @@
 <template>
-  <v-bottom-navigation :value="activeBtn" grow background-color="#1c101c" app>
+  <v-bottom-navigation
+    class="pt-1"
+    :value="activeBtn"
+    height="60"
+    grow
+    background-color="#1c101c"
+    app
+  >
     <v-btn class="mt-2">
       <router-link active-class="nav-selected" to="/" exact>
         <v-icon large>mdi-home</v-icon>
@@ -40,18 +47,12 @@ export default {
   color: $primary !important;
 }
 
-a {
-  text-decoration: none;
-  color: white !important;
-
-  &:focus {
-    background-color: $bg-dark-1;
-    width: 140px;
-  }
-}
-
 .span {
   display: block;
-  margin-bottom: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: $white !important;
 }
 </style>
