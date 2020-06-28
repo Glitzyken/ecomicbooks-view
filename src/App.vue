@@ -1,25 +1,23 @@
 <template>
   <v-app>
     <Header />
-    <div class="sample">
-      <Home />
+    <div class="global-bg">
+      <router-view></router-view>
     </div>
     <NavBar />
   </v-app>
 </template>
 
 <script>
-import Home from './views/Home';
-import NavBar from './components/NavBar';
 import Header from './components/Header';
+import NavBar from './components/NavBar';
 
 export default {
   name: 'App',
 
   components: {
-    Home,
-    NavBar,
-    Header
+    Header,
+    NavBar
   },
 
   data: () => ({
@@ -31,7 +29,7 @@ export default {
 <style lang="scss">
 @import './assets/sass/_variables.scss';
 
-.sample {
+.global-bg {
   background: $bg;
 }
 
