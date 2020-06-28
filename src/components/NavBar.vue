@@ -1,31 +1,23 @@
-/* eslint-disable */
-
 <template>
-  <v-bottom-navigation
-    :value="activeBtn"
-    grow
-    background-color="#1c101c"
-    height="60"
-    app
-  >
+  <v-bottom-navigation :value="activeBtn" grow background-color="#1c101c" app>
     <v-btn class="mt-2">
       <router-link active-class="nav-selected" to="/" exact>
         <v-icon large>mdi-home</v-icon>
-        <span>Home</span>
+        <span class="span">Home</span>
       </router-link>
     </v-btn>
 
     <v-btn class="mt-2">
       <router-link active-class="nav-selected" to="/search">
         <v-icon large>mdi-magnify</v-icon>
-        <span>Search</span>
+        <span class="span">Search</span>
       </router-link>
     </v-btn>
 
     <v-btn class="mt-2">
       <router-link active-class="nav-selected" to="/series">
         <v-icon large>mdi-book</v-icon>
-        <span>Series</span>
+        <span class="span">Series</span>
       </router-link>
     </v-btn>
   </v-bottom-navigation>
@@ -35,9 +27,9 @@
 export default {
   data() {
     return {
-      activeBtn: 0,
+      activeBtn: 0
     };
-  },
+  }
 };
 </script>
 
@@ -51,9 +43,15 @@ export default {
 a {
   text-decoration: none;
   color: white !important;
+
+  &:focus {
+    background-color: $bg-dark-1;
+    width: 140px;
+  }
 }
 
-span {
+.span {
   display: block;
+  margin-bottom: 4px;
 }
 </style>
