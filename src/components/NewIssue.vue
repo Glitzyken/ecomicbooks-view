@@ -1,22 +1,27 @@
 <template>
-  <v-row>
-    <v-col cols="6" lg="3" v-for="issue in issues" :key="issue.imgUrl">
-      <div class="card">
-        <v-img
-          class="rounded"
-          contain
-          max-width="150px"
-          :src="issue.imgUrl"
-          lazy-src="../assets/lazy-loader.jpg"
-          :alt="issue.title"
-        />
-        <div class="card__text">{{ issue.title }}</div>
-      </div>
-    </v-col>
-  </v-row>
+  <div>
+    <v-row>
+      <v-col cols="6" lg="3" v-for="issue in issues" :key="issue.imgUrl">
+        <div class="card">
+          <v-img
+            class="rounded"
+            contain
+            max-width="150px"
+            :src="issue.imgUrl"
+            lazy-src="../assets/lazy-loader.jpg"
+            :alt="issue.title"
+          />
+          <div class="card__text">{{ issue.title }}</div>
+        </div>
+      </v-col>
+    </v-row>
+    <Pagination />
+  </div>
 </template>
 
 <script>
+import Pagination from './Pagination';
+
 const img1 = require('../assets/mock-data/sample-1.jpg');
 const img2 = require('../assets/mock-data/sample-2.jpg');
 const img3 = require('../assets/mock-data/sample-3.jpg');
@@ -71,7 +76,9 @@ export default {
       ]
     };
   },
-  components: {}
+  components: {
+    Pagination
+  }
 };
 </script>
 

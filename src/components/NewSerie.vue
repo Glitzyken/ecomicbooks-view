@@ -1,22 +1,27 @@
 <template>
-  <v-row>
-    <v-col cols="6" v-for="serie in series" :key="serie.title">
-      <div class="card">
-        <v-img
-          class="rounded"
-          contain
-          max-width="150px"
-          :src="serie.imgUrl"
-          lazy-src="../assets/lazy-loader.jpg"
-          :alt="serie.title"
-        />
-        <div class="card__text">{{ serie.title }}</div>
-      </div>
-    </v-col>
-  </v-row>
+  <div>
+    <v-row>
+      <v-col cols="6" v-for="serie in series" :key="serie.title">
+        <div class="card">
+          <v-img
+            class="rounded"
+            contain
+            max-width="150px"
+            :src="serie.imgUrl"
+            lazy-src="../assets/lazy-loader.jpg"
+            :alt="serie.title"
+          />
+          <div class="card__text">{{ serie.title }}</div>
+        </div>
+      </v-col>
+    </v-row>
+    <Pagination />
+  </div>
 </template>
 
 <script>
+import Pagination from './Pagination';
+
 const img1 = require('../assets/mock-data/sample-1.jpg');
 const img2 = require('../assets/mock-data/sample-2.jpg');
 const img3 = require('../assets/mock-data/sample-3.jpg');
@@ -85,7 +90,10 @@ export default {
           'Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus.'
       }
     ]
-  })
+  }),
+  components: {
+    Pagination
+  }
 };
 </script>
 

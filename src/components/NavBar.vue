@@ -1,5 +1,13 @@
 <template>
-  <v-bottom-navigation class="pt-1" :value="activeBtn" height="60" grow app>
+  <v-bottom-navigation
+    class="pt-1"
+    :value="activeBtn"
+    height="60"
+    hide-on-scroll
+    scroll-threshold="5"
+    grow
+    app
+  >
     <v-btn class="mt-2">
       <router-link active-class="nav-selected" to="/" exact>
         <v-icon large>mdi-home</v-icon>

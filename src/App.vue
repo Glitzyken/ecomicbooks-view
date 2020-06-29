@@ -3,6 +3,7 @@
     <Header />
     <div class="main-bg">
       <router-view></router-view>
+      <div class="white-space"></div>
     </div>
     <NavBar />
   </v-app>
@@ -28,6 +29,10 @@ export default {
 
 <style lang="scss">
 @import './assets/sass/_variables.scss';
+
+.white-space {
+  height: 80px; // White space due to NavBar covering the bottom view
+}
 
 .main-bg {
   background: $bg;
