@@ -5,7 +5,7 @@
       :next-icon="nextIcon ? 'mdi-plus' : undefined"
     >
       <v-slide-item v-for="serie in series" :key="serie.title">
-        <v-card color="#291b29" class="ma-4 mr-0" height="300" width="250">
+        <v-card class="ma-4 mr-0" height="300" width="250">
           <div class="cover">
             <img class="cover__img" :src="serie.imgUrl" />
           </div>
@@ -71,6 +71,10 @@ export default {
 
 .v-item-group {
   background: $bg;
+}
+
+.v-card {
+  background: $bg-dark-1 !important;
 }
 
 .cover {

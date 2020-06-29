@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <Header />
-    <div class="global-bg">
+    <div class="main-bg">
       <router-view></router-view>
     </div>
     <NavBar />
@@ -29,7 +29,7 @@ export default {
 <style lang="scss">
 @import './assets/sass/_variables.scss';
 
-.global-bg {
+.main-bg {
   background: $bg;
 }
 

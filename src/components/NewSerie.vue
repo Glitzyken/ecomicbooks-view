@@ -88,3 +88,5 @@ export default {
   })
 };
 </script>
+
+<!-- Style obtained from NewIssue component-->
