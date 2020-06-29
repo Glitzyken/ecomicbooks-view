@@ -1,6 +1,8 @@
 <template>
   <v-container class="pa-5 mx-auto">
-    <h1><span class="custom-span"> New </span> Issues</h1>
+    <h1>
+      <span class="custom-span">New</span> Issues
+    </h1>
 
     <!-- Dummy dynamic contents (to be replaced with real data from the backend) -->
 
@@ -12,7 +14,7 @@
             contain
             max-width="150px"
             :src="issue.imgUrl"
-            lazy-src="../assets/img/lazy-loader.jpg"
+            lazy-src="../assets/lazy-loader.jpg"
             :alt="issue.title"
           />
           <div class="card__text">{{ issue.title }}</div>
@@ -23,15 +25,15 @@
 </template>
 
 <script>
-const img1 = require('../assets/img/sample-1.jpg');
-const img2 = require('../assets/img/sample-2.jpg');
-const img3 = require('../assets/img/sample-3.jpg');
-const img4 = require('../assets/img/sample-4.jpg');
-const img5 = require('../assets/img/sample-5.jpg');
-const img6 = require('../assets/img/sample-6.jpg');
-const img7 = require('../assets/img/sample-7.jpg');
-const img8 = require('../assets/img/sample-8.jpg');
-const img9 = require('../assets/img/sample-9.jpg');
+const img1 = require('../assets/mock-data/sample-1.jpg');
+const img2 = require('../assets/mock-data/sample-2.jpg');
+const img3 = require('../assets/mock-data/sample-3.jpg');
+const img4 = require('../assets/mock-data/sample-4.jpg');
+const img5 = require('../assets/mock-data/sample-5.jpg');
+const img6 = require('../assets/mock-data/sample-6.jpg');
+const img7 = require('../assets/mock-data/sample-7.jpg');
+const img8 = require('../assets/mock-data/sample-8.jpg');
+const img9 = require('../assets/mock-data/sample-9.jpg');
 
 export default {
   name: 'Home',
@@ -72,7 +74,7 @@ export default {
         },
         {
           imgUrl: img9,
-          title: 'The Low, Low Woods Issue 34'
+          title: 'The Low, Low Woods Issue #34'
         }
       ]
     };

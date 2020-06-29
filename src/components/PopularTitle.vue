@@ -1,30 +1,96 @@
 <template>
-  <div>
-    <v-sheet class="mx-auto" max-width="800">
-      <v-slide-group
-        :prev-icon="prevIcon ? 'mdi-minus' : undefined"
-        :next-icon="nextIcon ? 'mdi-plus' : undefined"
-      >
-        <v-slide-item v-for="n in 15" :key="n">
-          <v-card color="#1c101c" class="ma-4 mr-0" height="170" width="220">
-          </v-card>
-        </v-slide-item>
-      </v-slide-group>
-    </v-sheet>
-  </div>
+  <v-sheet class="mx-auto" max-width="800">
+    <v-slide-group
+      :prev-icon="prevIcon ? 'mdi-minus' : undefined"
+      :next-icon="nextIcon ? 'mdi-plus' : undefined"
+    >
+      <v-slide-item v-for="serie in series" :key="serie.title">
+        <v-card color="#291b29" class="ma-4 mr-0" height="350" width="300">
+          <div class="cover">
+            <img class="cover__img" :src="serie.imgUrl" />
+          </div>
+          <div class="title-info">
+            <p class="title">{{ serie.title }}</p>
+            <p class="text-truncate">{{ serie.des }}</p>
+          </div>
+        </v-card>
+      </v-slide-item>
+    </v-slide-group>
+  </v-sheet>
 </template>
 
 <script>
+const img5 = require('../assets/mock-data/sample-5.jpg');
+const img6 = require('../assets/mock-data/sample-6.jpg');
+const img7 = require('../assets/mock-data/sample-7.jpg');
+const img8 = require('../assets/mock-data/sample-8.jpg');
+const img9 = require('../assets/mock-data/sample-9.jpg');
+
 export default {
   data: () => ({
     prevIcon: false,
-    nextIcon: false
+    nextIcon: false,
+    series: [
+      {
+        imgUrl: img5,
+        title: 'Gung Ho',
+        des:
+          'Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus.'
+      },
+      {
+        imgUrl: img6,
+        title: 'Firefly',
+        des:
+          'Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus.'
+      },
+      {
+        imgUrl: img7,
+        title: 'Tartarus',
+        des:
+          'Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus.'
+      },
+      {
+        imgUrl: img8,
+        title: 'Transformers',
+        des:
+          'Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus.'
+      },
+      {
+        imgUrl: img9,
+        title: 'The Low, Low Woods',
+        des:
+          'Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus.'
+      }
+    ]
   })
 };
 </script>
 
 <style lang="scss">
+@import '../assets/sass/variables';
+
 .v-item-group {
-  background: #362936;
+  background: $bg;
+}
+
+.cover {
+  width: 100%;
+  height: 70%;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 20% 0px;
+  }
+}
+
+.title-info {
+  color: $white;
+  padding: 20px;
+}
+
+.title {
+  margin-bottom: 1px !important;
 }
 </style>

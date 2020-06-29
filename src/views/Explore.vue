@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1 class="h1"><span class="custom-span"> Popular </span> Titles</h1>
+    <h1 class="h1">
+      <span class="custom-span">Popular</span> Titles
+    </h1>
     <PopularTitle />
   </div>
 </template>
@@ -17,6 +19,6 @@ export default {
 
 <style lang="scss" scoped>
 .h1 {
-  margin: 20px 0px 10px 20px;
+  margin: 20px 0px 0px 20px;
 }
 </style>
