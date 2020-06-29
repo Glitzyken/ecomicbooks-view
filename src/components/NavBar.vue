@@ -23,7 +23,7 @@
 
     <v-btn class="mt-2">
       <router-link active-class="nav-selected" to="/series">
-        <v-icon large>mdi-book</v-icon>
+        <v-icon large>mdi-book-alphabet</v-icon>
         <span class="span">Series</span>
       </router-link>
     </v-btn>

@@ -4,20 +4,28 @@
       <span class="custom-span">Popular</span> Titles
     </h1>
     <PopularTitle />
+    <h1 class="h1">
+      <span class="custom-span">New</span> Series
+    </h1>
+    <v-container class="pa-5 mx-auto mt-n4">
+      <NewSerie />
+    </v-container>
   </div>
 </template>
 
 <script>
 import PopularTitle from '../components/PopularTitle';
+import NewSerie from '../components/NewSerie';
 
 export default {
   components: {
-    PopularTitle
+    PopularTitle,
+    NewSerie
   }
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .h1 {
   margin: 20px 0px 0px 20px;
 }

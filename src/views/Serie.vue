@@ -1,5 +1,7 @@
 <template>
   <div>
-    <h1><span class="custom-span"> New </span> Series</h1>
+    <h1 class="h1">
+      <span class="custom-span">Full</span> Comic Lists
+    </h1>
   </div>
 </template>
