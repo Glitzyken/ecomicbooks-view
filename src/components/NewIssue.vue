@@ -1,6 +1,6 @@
 <template>
   <v-row>
-    <v-col cols="6" v-for="issue in issues" :key="issue.imgUrl">
+    <v-col cols="6" lg="3" v-for="issue in issues" :key="issue.imgUrl">
       <div class="card">
         <v-img
           class="rounded"
