@@ -2,17 +2,19 @@
   <div>
     <v-row>
       <v-col cols="6" lg="3" v-for="issue in issues" :key="issue.imgUrl">
-        <div class="card">
-          <v-img
-            class="rounded"
-            contain
-            max-width="150px"
-            :src="issue.imgUrl"
-            lazy-src="../assets/lazy-loader.jpg"
-            :alt="issue.title"
-          />
-          <div class="card__text">{{ issue.title }}</div>
-        </div>
+        <router-link to="/read">
+          <div class="card">
+            <v-img
+              class="rounded"
+              contain
+              max-width="150px"
+              :src="issue.imgUrl"
+              lazy-src="../assets/lazy-loader.jpg"
+              :alt="issue.title"
+            />
+            <div class="card__text">{{ issue.title }}</div>
+          </div>
+        </router-link>
       </v-col>
     </v-row>
     <Pagination />

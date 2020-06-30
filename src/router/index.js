@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import Explore from '../views/Explore.vue';
+import Reader from '../views/Reader.vue';
 
 Vue.use(VueRouter);
 
@@ -15,6 +16,11 @@ const routes = [
     path: '/explore',
     name: 'Explore',
     component: Explore
+  },
+  {
+    path: '/read',
+    name: 'Reader',
+    component: Reader
   },
   {
     path: '/series',
