@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "register-service-worker": "^1.7.1",
     "ress": "^2.0.4",
     "vue": "^2.6.11",
     "vue-picture-swipe": "^1.2.0",
