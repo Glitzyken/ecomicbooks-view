@@ -5,15 +5,17 @@
       :next-icon="nextIcon ? 'mdi-plus' : undefined"
     >
       <v-slide-item v-for="serie in series" :key="serie.title">
-        <v-card class="ma-4 mr-0" height="300" width="250">
-          <div class="cover">
-            <img class="cover__img" :src="serie.imgUrl" />
-          </div>
-          <div class="title-info">
-            <p class="title">{{ serie.title }}</p>
-            <p class="text-truncate">{{ serie.des }}</p>
-          </div>
-        </v-card>
+        <router-link to="/overview">
+          <v-card class="ma-4 mr-0" height="300" width="250">
+            <div class="cover">
+              <img class="cover__img" :src="serie.imgUrl" />
+            </div>
+            <div class="title-info">
+              <p class="title">{{ serie.title }}</p>
+              <p class="text-truncate">{{ serie.des }}</p>
+            </div>
+          </v-card>
+        </router-link>
       </v-slide-item>
     </v-slide-group>
   </v-sheet>

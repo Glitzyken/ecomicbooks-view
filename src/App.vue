@@ -31,7 +31,7 @@ export default {
 @import './assets/sass/_variables.scss';
 
 .white-space {
-  height: 80px; // White space due to NavBar covering the bottom view
+  height: 60px; // White space due to NavBar covering the bottom view
 }
 
 .main-bg {
