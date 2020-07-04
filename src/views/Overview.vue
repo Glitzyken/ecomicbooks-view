@@ -22,6 +22,25 @@
           lacus ante convallis tellus.
         </p>
       </div>
+
+      <div class="title-issues">
+        <P class="title-issues__prop">ISSUES:</P>
+        <router-link to="/read">
+          <v-card max-width="360">
+            <p class="title-issues__name">Gung Ho Issue #1</p>
+          </v-card>
+        </router-link>
+        <router-link to="/read">
+          <v-card max-width="360">
+            <p class="title-issues__name">Gung Ho Issue #2</p>
+          </v-card>
+        </router-link>
+        <router-link to="/read">
+          <v-card max-width="360">
+            <p class="title-issues__name">Gung Ho Issue #3</p>
+          </v-card>
+        </router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -70,5 +89,19 @@ export default {
   margin-bottom: -1px;
   color: $primary-light;
   font-weight: 700;
+}
+
+.title-issues {
+  &__prop {
+    color: $bg-dark-2;
+    margin-left: 50px;
+    margin-bottom: 2px;
+    font-weight: 700;
+  }
+
+  &__name {
+    color: $white;
+    text-align: center;
+  }
 }
 </style>
