@@ -6,12 +6,12 @@
     >
       <v-slide-item v-for="serie in series" :key="serie.title">
         <router-link to="/overview">
-          <v-card class="ma-4 mr-0" height="300" width="250">
+          <v-card class="ma-4 mr-0" height="270" width="220">
             <div class="cover">
               <img class="cover__img" :src="serie.imgUrl" />
             </div>
             <div class="title-info">
-              <p class="title">{{ serie.title }}</p>
+              <p class="name">{{ serie.title }}</p>
               <p class="text-truncate">{{ serie.des }}</p>
             </div>
           </v-card>
@@ -96,7 +96,7 @@ export default {
   padding: 10px;
 }
 
-.title {
+.name {
   margin-bottom: 1px !important;
 }
 </style>

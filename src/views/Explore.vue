@@ -1,16 +1,19 @@
 <template>
-  <div>
-    <h1 class="h1">
-      <span class="custom-span">Popular</span> Titles
-    </h1>
-    <PopularTitle />
-    <h1 class="h1">
-      <span class="custom-span">New</span> Series
-    </h1>
-    <v-container class="pa-5 mx-auto mt-n4">
-      <NewSerie />
-    </v-container>
-  </div>
+  <v-container class="pa-5 mx-auto mt-n4">
+    <v-row>
+      <v-col lg="8">
+        <h1 class="h1">
+          <span class="custom-span">Popular</span> Titles
+        </h1>
+        <PopularTitle />
+        <h1 class="h1">
+          <span class="custom-span">New</span> Series
+        </h1>
+
+        <NewSerie />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
