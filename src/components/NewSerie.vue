@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-row>
-      <v-col cols="6" lg="3" v-for="serie in series" :key="serie.title">
+      <v-col cols="6" xl="2" lg="3" md="3" sm="3" v-for="serie in series" :key="serie.title">
         <router-link to="/overview">
           <div class="card">
             <v-img

@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-row>
-      <v-col cols="6" lg="3" v-for="issue in issues" :key="issue.imgUrl">
+      <v-col cols="6" xl="2" lg="3" md="3" sm="3" v-for="issue in issues" :key="issue.imgUrl">
         <router-link to="/read">
           <div class="card">
             <v-img

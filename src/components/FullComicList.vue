@@ -6,7 +6,16 @@
       </v-col>
     </v-row>
     <v-row align="center">
-      <v-col class="mb-n5" cols="6" lg="3" v-for="serie in series" :key="serie.title">
+      <v-col
+        class="mb-n5"
+        cols="6"
+        xl="2"
+        lg="2"
+        md="3"
+        sm="3"
+        v-for="serie in series"
+        :key="serie.title"
+      >
         <v-card>
           <p>{{ serie.title }}</p>
         </v-card>
