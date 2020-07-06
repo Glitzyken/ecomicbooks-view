@@ -1,11 +1,15 @@
 <template>
   <v-container class="pa-5 mx-auto">
-    <h1>
-      <span class="custom-span">New</span> Issues
-    </h1>
+    <v-row>
+      <v-col lg="8">
+        <h1>
+          <span class="custom-span">New</span> Issues
+        </h1>
 
-    <!-- dynamically rendering dummy contents (to be replaced with real data from the backend) -->
-    <NewIssue />
+        <!-- dynamically rendering dummy contents (to be replaced with real data from the backend) -->
+        <NewIssue />
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
