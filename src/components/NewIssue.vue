@@ -7,7 +7,7 @@
             <v-img
               class="rounded"
               contain
-              max-width="150px"
+              max-width="140"
               :src="issue.imgUrl"
               lazy-src="../assets/lazy-loader.jpg"
               :alt="issue.title"
